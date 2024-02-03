@@ -18,7 +18,7 @@ const alertCard = `
     <section class="card card--alert">
       <section class="card--alert__img--wrapper">
         <img
-          src="./assets/illustration-thank-you.svg"
+          src="./src/assets/illustration-thank-you.svg"
           alt=""
           class="card--alert__img"
         />
@@ -65,7 +65,7 @@ submitButton.addEventListener("click", function (e) {
 
   document.body.insertAdjacentHTML(
     "afterbegin",
-    `<img class="spinner" src="./assets/spinner.gif" alt="loading spinner gif">`
+    `<img class="spinner" src="./src/assets/spinner.gif" alt="loading spinner gif">`
   );
 
   setTimeout(() => {
