@@ -2,7 +2,6 @@
 import thankYouIllustration from "./assets/illustration-thank-you.svg";
 import spinnerGif from "./assets/spinner.gif";
 
-const card = document.querySelector(".card");
 const submitButton = document.querySelector(".card__btn");
 const ratingCard = document.querySelector(".card--rating");
 const cardNumberWrapper = document.querySelector(".card__numbers");
