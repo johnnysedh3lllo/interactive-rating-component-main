@@ -1,0 +1,123 @@
+* {
+  // outline: 1px solid red;
+}
+body {
+  font-family: $ff-primary;
+  display: $grid-display;
+  place-items: center;
+
+  background-color: $clr-blue-very-dark;
+  padding: 2rem;
+}
+
+.card {
+  padding: 2rem;
+  inline-size: min(100%, 25.5rem);
+  border-radius: 1.5rem;
+  display: $grid-display;
+  gap: 1.75rem;
+  background-color: $clr-blue-dark;
+  transition: all 1s;
+
+  &--rating__img--wrapper {
+    justify-self: start;
+    border-radius: $border-radius;
+    background-color: $clr-blue-mid;
+
+    padding: 1rem;
+  }
+
+  &__body {
+    display: $grid-display;
+    gap: 1.75rem;
+  }
+
+  &__title {
+    font-size: $fs-primary-200;
+    font-weight: $fw-700;
+    padding-block-end: 0.5rem;
+    color: $clr-white;
+  }
+  &__par {
+    font-size: $fs-primary;
+    line-height: 1.58;
+    color: $clr-grey-light;
+    &--orange {
+      color: $clr-orange;
+    }
+  }
+
+  &__numbers {
+    display: flex;
+    justify-content: space-between;
+    &__number {
+      border: 0;
+      display: $grid-display;
+      place-content: center;
+      inline-size: 3.2rem;
+      block-size: 3.2rem;
+      background-color: $clr-blue-mid;
+      border-radius: 50px;
+      font-weight: $fw-700;
+      color: $clr-grey-light;
+      transition: $transition;
+      &:hover {
+        background-color: $clr-orange;
+        color: $clr-white;
+      }
+      &:active {
+        background-color: $clr-grey-medium;
+      }
+      &::selection {
+        background-color: transparent;
+      }
+    }
+  }
+  &__btn {
+    letter-spacing: 1.5px;
+    padding: 0.7rem;
+    font-weight: $fw-700;
+    text-transform: uppercase;
+    border: 0;
+    background-color: blue;
+    border-radius: 2rem;
+    font-size: $fs-primary-100;
+    background-color: $clr-orange;
+    color: $clr-white;
+    transition: $transition;
+
+    &:hover {
+      background-color: $clr-white;
+      color: $clr-orange;
+    }
+  }
+
+  &--alert {
+    text-align: center;
+    justify-items: center;
+    gap: 2rem;
+    transition: all 0.5s;
+
+    &__section {
+      background-color: $clr-blue-mid;
+      padding: 0.25rem 1rem;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.active {
+  background-color: $clr-grey-medium;
+}
+
+.no-display {
+  display: none;
+}
+
+.no-opacity,
+.transform {
+  opacity: 0;
+}
+.transform {
+  translate: 0 50px;
+}
