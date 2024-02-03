@@ -1,6 +1,6 @@
 //use strict;
-import thankYouIllustration from "./assets/illustration-thank-you.svg";
-import spinnerGif from "./assets/spinner.gif";
+// import thankYouIllustration from "./assets/illustration-thank-you.svg";
+// import spinnerGif from "./assets/spinner.gif";
 
 console.log(thankYouIllustration);
 console.log(spinnerGif);
@@ -18,7 +18,7 @@ const alertCard = `
     <section class="card card--alert">
       <section class="card--alert__img--wrapper">
         <img
-          src="${thankYouIllustration}"
+          src="./assets/illustration-thank-you.svg"
           alt=""
           class="card--alert__img"
         />
@@ -49,7 +49,6 @@ cardNumberWrapper.addEventListener("click", function (e) {
   if (!clicked || clicked.classList.contains("card__numbers")) return;
 
   cardNumbers.forEach((el) => {
-    // console.log(el);
     if (el !== clicked) {
       el.classList.remove("active");
     }
@@ -66,7 +65,7 @@ submitButton.addEventListener("click", function (e) {
 
   document.body.insertAdjacentHTML(
     "afterbegin",
-    `<img class="spinner" src="${spinnerGif}" alt="loading spinner gif">`
+    `<img class="spinner" src="./assets/spinner.gif" alt="loading spinner gif">`
   );
 
   setTimeout(() => {
