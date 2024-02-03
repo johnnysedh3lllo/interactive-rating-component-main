@@ -2,8 +2,8 @@
 // import thankYouIllustration from "./assets/illustration-thank-you.svg";
 // import spinnerGif from "./assets/spinner.gif";
 
-// console.log(thankYouIllustration);
-// console.log(spinnerGif);
+// ${thankYouIllustration}
+// ${spinnerGif}
 
 const card = document.querySelector(".card");
 const submitButton = document.querySelector(".card__btn");
@@ -76,6 +76,7 @@ submitButton.addEventListener("click", function (e) {
     document.querySelector(".card__par__span--total").textContent =
       cardNumbers.length;
     document.querySelector(".card__par__span").textContent = rateNumber;
+    rateNumber = "";
   }, 750);
 
   cardNumbers.forEach((el) => {
