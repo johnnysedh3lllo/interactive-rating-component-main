@@ -2,8 +2,8 @@
 // import thankYouIllustration from "./assets/illustration-thank-you.svg";
 // import spinnerGif from "./assets/spinner.gif";
 
-console.log(thankYouIllustration);
-console.log(spinnerGif);
+// console.log(thankYouIllustration);
+// console.log(spinnerGif);
 
 const card = document.querySelector(".card");
 const submitButton = document.querySelector(".card__btn");
