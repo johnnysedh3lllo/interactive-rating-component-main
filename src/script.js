@@ -1,9 +1,6 @@
 //use strict;
-// import thankYouIllustration from "./assets/illustration-thank-you.svg";
-// import spinnerGif from "./assets/spinner.gif";
-
-// ${thankYouIllustration}
-// ${spinnerGif}
+import thankYouIllustration from "./assets/illustration-thank-you.svg";
+import spinnerGif from "./assets/spinner.gif";
 
 const card = document.querySelector(".card");
 const submitButton = document.querySelector(".card__btn");
@@ -20,7 +17,7 @@ const alertCard = `
         <img
           width="162"
           height="108"
-          src="./src/assets/illustration-thank-you.svg"
+          src="${thankYouIllustration}"
           alt=""
           class="card--alert__img"
         />
@@ -67,7 +64,7 @@ submitButton.addEventListener("click", function (e) {
 
   document.body.insertAdjacentHTML(
     "afterbegin",
-    `<img width="64" height="64" class="spinner" src="./src/assets/spinner.gif" alt="loading spinner gif">`
+    `<img width="64" height="64" class="spinner" src="${spinnerGif}" alt="loading spinner gif">`
   );
 
   setTimeout(() => {
